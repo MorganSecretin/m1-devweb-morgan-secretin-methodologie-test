@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: testdevweb-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: OKL123plm
+      MYSQL_DATABASE: testdevweb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: DFGVBN14cv
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+
+volumes:
+  mysql_data:
