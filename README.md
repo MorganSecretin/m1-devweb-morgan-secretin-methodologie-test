@@ -11,7 +11,7 @@ docker-compose up -d
 mvn spring-boot:run
 ```
 
-# Résumé `UserServiceTest.java`
+# Résumé [`UserServiceTest.java`](./src/test/java/fr/ynov/testdevweb/services/UserServiceTest.java)
 
 - Teste toutes les opérations REST (CRUD) sur les utilisateurs.
 - Vérifie les règles métiers : email unique, gestion erreurs (exceptions personnalisées).
@@ -19,4 +19,4 @@ mvn spring-boot:run
 - Dépendances injectées, repo mocké (Mockito), pas de vraie BDD.
 - Couvre tous les cas : succès, erreurs, doublons, non trouvés.
 
-**Ce fichier garantit la conformité métier et technique de l’API utilisateur.**
+**Ce fichier garantit la conformité métier et technique de l’API User.**
