@@ -1,13 +1,11 @@
-# Lancemennt projet
+# LANCER LE PROJET
+**Prérequis :**
+- [Java 21](https://www.oracle.com/fr/java/technologies/downloads/#java21)
+- [Maven](https://maven.apache.org/download.cgi)
 
+**Commandes pour le lancement :**
 ```bash
-# 1. Lancer tests
-mvn test
-
-# 2. Init BDD dev
-docker-compose up -d
-
-# 3. Lancer projet
+# Dans le terminal à la racine du projet
 mvn spring-boot:run
 ```
 
